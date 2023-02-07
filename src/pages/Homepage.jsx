@@ -11,8 +11,8 @@ const Homepage = () => {
       .then((res) => res.json())
       .then((data) => {
         setProducts(data.ecommerce.products);
-        console.log(products);
-        console.log(data);
+        // console.log(products);
+        // console.log(data);
       });
       // eslint-disable-next-line
   }, []);
@@ -25,14 +25,14 @@ const Homepage = () => {
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-5 lg:px-10 py-10 mx-auto gap-5 mt-6">
         {products?.map((product, index) => (
           <Link to={`/${product.id}`} key={index}>
-            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
               <img
                 className="rounded-t-lg h-72 w-72 mx-auto justify-center items-center"
                 src={product.image}
                 alt=""
               />
 
-              <div class="p-5">
+              <div className="p-5">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
                   {product.name}
                 </h5>

@@ -16,9 +16,9 @@ const ProductPage = () => {
         setProduct(data.ecommerce.product);
         setProductColors(data.ecommerce.product.colors)
         setProductImage(data.ecommerce.product.images)
-        console.log(product);
-        console.log(productColors);
-        console.log(data);
+        // console.log(product);
+        // console.log(productColors);
+        // console.log(data);
       });
       // eslint-disable-next-line
   }, []);
@@ -147,7 +147,7 @@ const ProductPage = () => {
               </svg>
             </div>
             <p className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 font-normal text-base leading-4 text-gray-700 hover:underline hover:text-gray-800 duration-100 cursor-pointer">
-              22 reviews
+             
             </p>
           </div>
 

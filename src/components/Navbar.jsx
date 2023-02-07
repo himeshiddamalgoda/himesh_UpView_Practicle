@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
+import logo from '../asset/logo.png'
 // import { Link } from 'react-scroll'
 
 const Navbar = () => {
@@ -30,9 +31,9 @@ const Navbar = () => {
     ]
 
   return (
-    <div className='flex justify-between items-center w-full h-20 text-white bg-black fixed px-4'>
-        <div>
-            <h1 className='text-5xl font-signature ml-2'>ECommerce</h1>
+    <div className='flex justify-between items-center w-full h-20 bg-slate-100 fixed px-4'>
+        <div className='p-2'>
+            <img src={logo} className="w-20 h-14" alt="" />
         </div>
 
         <ul className='hidden md:flex'>

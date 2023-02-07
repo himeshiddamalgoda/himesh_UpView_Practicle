@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
 // import { BiSearch } from "react-icons/bi";
-import { Link, useNavigate } from "react-router-dom";
-import { Rating } from "react-simple-star-rating";
+import { Link,  } from "react-router-dom";
+// import { Rating } from "react-simple-star-rating";
 
 const Homepage = () => {
   const [products, setProducts] = useState([]);
-  const navigate = useNavigate();
 
   useEffect(() => {
     fetch(`https://my-json-server.typicode.com/kodplex/pr-re-ec-products/db`)
@@ -15,6 +14,7 @@ const Homepage = () => {
         console.log(products);
         console.log(data);
       });
+      // eslint-disable-next-line
   }, []);
 
   return (
